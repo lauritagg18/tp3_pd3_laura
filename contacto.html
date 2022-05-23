@@ -19,11 +19,12 @@
 			<a href="galeria.html">Galería</a>
 			<a href="contacto.html">Contacto</a>
 		</nav>
-	    <div class="buscar"> 
-			 <input type="text" placeholder="Buscar" required>
-	    </div>
 	<div class="btn"> 
-	  <a href="#" onclick="myFunction()"><img class="lupa" src="imagenes/lupa.png" alt="lupa"></a>
+	  <img class="lupa" src="imagenes/lupa.png" alt="lupa"></a>
+	  <form class="buscar" action="resultados_buscar.php" method="post"> 
+	  <input type="search" name="buscar" placeholder="Buscar..." />
+      <input type="submit" value="Enviar">
+	    </form>
   </div>
 		<a href="index.html"><img class="logo" src="imagenes/Expresionismo.png" alt="Expresionismo"></a>
 	    <a href="index.html"><img class="logueo" src="imagenes/Logueo.png" alt="Ícono de logueo"></a>
@@ -37,7 +38,7 @@
 		<img class="formufoto" src="imagenes/Danza2.png" alt="Maqueta">
 	</article>
 	<article class="articledos">
-	<form method="post" action="formulario.html" class="formulario">	
+	<form action="enviar.php" method="post" class="formulario">	
 		<p>
 			<label for="camponombre">NOMBRE</label>
 			<input type="text" name="nombre" required id="camponombre" placeholder= "Nombre"> 
@@ -55,7 +56,7 @@
 			<input type="email" name="email" required id="campoemail" placeholder= "Email"> 
 		</p>
 		<p><label for="campopersona">PROFESIÓN</label>
-			<select name="Sucursal">
+			<select name="profesion">
 		<option value="-1"> Seleccione</option>		
         <option value="Profesor"> Profesor</option>
         <option value="Estudiante"> Estudiante</option>
@@ -64,10 +65,10 @@
       </p>
 		<p>
         <label for="campomotivo">MOTIVO</label>
-        <input  type="radio" name="motivo" value="Reserva"> Información
-        <input type="radio" name="motivo" value="Opiniones"> Opiniones
-		<input type="radio" name="motivo" value="Soporte"> Soporte
-			<input type="radio" name="motivo" value="RRHH"> RRHH
+        <input  type="radio" name="asunto" value="Reserva"> Información
+        <input type="radio" name="asunto" value="Opiniones"> Opiniones
+		<input type="radio" name="asunto" value="Soporte"> Soporte
+			<input type="radio" name="asunto" value="RRHH"> RRHH
       </p>
 	  <p>
 			<label for="campocalifica">CALIFÍCANOS</label>
@@ -75,11 +76,12 @@
 		</p>
 		<p>
 			<label for="campocv">ADJUNTA TU CV</label>
-		<input type="file" name="currículum" id="campocv"> 
+		<input type="file" name="curriculum" id="campocv"> 
 		</p>
 		<p>
-			<label for="campocomentario">MENSAJE</label>
-			<textarea id="campocomentario" placeholder= "Escribe tu mensaje" rows="10" cols="70"></textarea>
+			<label for="campocomentario">MENSAJE
+			<textarea name="comentario" placeholder= "Escribe tu mensaje"></textarea>
+			</label>
 		</p>
 		<p class="aceptar">
 			<input class="aceptar2" type="submit" value="Enviar">
@@ -123,6 +125,6 @@
 			<a class="name" href="email.html" target="_blank">Laura C Guillen G</a>
  </section>
 </footer>
-	<script>function myFunction() {var x = document.getElementById("mimenu");if (x.className === " ") {x.className += " menucelular";} else {x.className = " ";}}</script>
 </body>
 </html>
+
