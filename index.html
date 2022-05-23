@@ -19,14 +19,15 @@
 			<a href="galeria.html">Galería</a>
 			<a href="contacto.html">Contacto</a>
 		</nav>
-	    <div class="buscar"> 
-			 <input type="text" placeholder="Buscar" required>
-	    </div>
-	<div class="btn"> 
-	  <a href="#" onclick="myFunction()"><img class="lupa" src="imagenes/lupa.png" alt="lupa"></a>
+	  <div class="btn"> 
+	  <img class="lupa" src="imagenes/lupa.png" alt="lupa"></a>
+	  <form class="buscar" action="resultados_buscar.php" method="post"> 
+	  <input type="search" name="buscar" placeholder="Buscar..." />
+      <input type="submit" value="Enviar">
+	    </form>
   </div>
 		<a href="index.html"><img class="logo" src="imagenes/Expresionismo.png" alt="Expresionismo"></a>
-	    <a href="index.html"><img class="logueo" src="imagenes/Logueo.png" alt="Ícono de logueo"></a>
+	    <img class="logueo" src="imagenes/Logueo.png" alt="Ícono de logueo">
 </header>
 	<div class="cajatitulo">
 	 <h1>EXPRESIONISMO</h1>
@@ -137,6 +138,5 @@ function carousel() {
 }
 </script>	
 <!-- Fin de Código de JavaScript para Slider -->
-	<script>function myFunction() {var x = document.getElementById("mimenu");if (x.className === " ") {x.className += " menucelular";} else {x.className = " ";}}</script>
 </body>
 </html>
