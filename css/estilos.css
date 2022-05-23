@@ -8,10 +8,8 @@ nav span a {position: absolute;left:0px;display: none}
 .artista1 {position: absolute;top:30px}
 .artista2 {position: absolute;top:60px}
 .artista3 {position: absolute;top:90px}
-nav span:hover a {display: block;background-color: #000000;padding: 15%}
-nav a, nav span{color: #ffffff;margin-right: 1%;text-decoration: none;}
+nav a{color: #ffffff;margin-right: 1%;text-decoration: none;}
 nav a:hover, nav span:hover {color:#950101;text-decoration: underline;}
-nav span{position: relative;}
 .logo{width: 3.5%;position: absolute;top: 1%;right: 20%} 
 .buscar{position: absolute;top: 1%;padding: 1%;left: 52%;width: 10%;width: 20%;padding-top: 2.5%;}
 input{color:#ffffff ;background-color:#000000;border-top-color: #000000;border-right-color: #000000;border-left-color: #000000;border-bottom-color: #ffffff}
@@ -68,5 +66,4 @@ form{;padding-left:5%;padding-top:5%;font-family: 'Kanit', sans-serif;}
 .artexp h1{font-size: 210%}
 .artexp h2{font-size: 140%;font-family: 'Kanit', sans-serif;}
 .artexp p{font-size: 110%}
-.cajafilosofia p{font-size: 180%}
 p{font-family: 'Kanit', sans-serif;}
