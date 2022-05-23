@@ -14,16 +14,17 @@
 <header>
 		<nav>
 			<a href="origen.html">Origen</a>
-			<a href="filosofia.html">Filosofia</a>
+			<a href="filosofIa.html">Filosofia</a>
 			<a href="artistas.html">Artistas</a>
-			<a href="galeria.html">Galería</a>
+			<a href="galerIa.html">Galería</a>
 			<a href="contacto.html">Contacto</a>
 		</nav>
-	    <div class="buscar"> 
-			 <input type="text" placeholder="Buscar" required>
-	    </div>
-	<div class="btn"> 
-	  <a href="#" onclick="myFunction()"><img class="lupa" src="imagenes/lupa.png" alt="lupa"></a>
+	 <div class="btn"> 
+	  <img class="lupa" src="imagenes/lupa.png" alt="lupa"></a>
+	  <form class="buscar" action="resultados_buscar.php" method="post"> 
+	  <input type="search" name="buscar" placeholder="Buscar..." />
+      <input type="submit" value="Enviar">
+	    </form>
   </div>
 		<a href="index.html"><img class="logo" src="imagenes/Expresionismo.png" alt="Expresionismo"></a>
 	    <a href="index.html"><img class="logueo" src="imagenes/Logueo.png" alt="Ícono de logueo"></a>
@@ -94,5 +95,30 @@
  </section>
 </footer>
 	<script>function myFunction() {var x = document.getElementById("mimenu");if (x.className === " ") {x.className += " menucelular";} else {x.className = " ";}}</script>
+</body>
+</html>
+
+		<a href="soporte.html">ayuda y soporte técnico</a>
+		<a href="contacto.html">suscríbete a la newsletter</a>
+		<a href="mundo.html">EISMO EN EL MUNDO</a>
+	</div>
+<section class="secredes">
+			<div class="redes">
+				<a href="http://www.instagram.com"><img src="imagenes/insta.png" alt="Instagram"></a>
+			</div>
+			<div class="redes">
+				<a href="http://www.facebook.com"><img src="imagenes/face.png" alt="Facebook"></a>
+			</div>
+			<div class="redes">
+				<a href="http://www.twitter.com"><img src="imagenes/twiiter.png" alt="Twitter"></a>
+			</div>
+			<div class="redes">
+				<a href="http://www.youtube.com"><img src="imagenes/youtube.png" alt="Whatsapp"></a>
+			</div>
+ </section>
+ <section class="name">
+			<a class="name" href="email.html" target="_blank">Laura C Guillen G</a>
+ </section>
+</footer>
 </body>
 </html>
