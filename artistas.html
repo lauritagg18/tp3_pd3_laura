@@ -24,7 +24,11 @@
 			 <input type="text" placeholder="Buscar" required>
 	    </div>
 	<div class="btn"> 
-	  <a href="#" onclick="myFunction()"><img class="lupa" src="imagenes/lupa.png" alt="lupa"></a>
+	  <img class="lupa" src="imagenes/lupa.png" alt="lupa"></a>
+	  <form class="buscar" action="resultados_buscar.php" method="post"> 
+	  <input type="search" name="buscar" placeholder="Buscar..." />
+      <input type="submit" value="Enviar">
+	    </form>
   </div>
 		<a href="index.html"><img class="logo" src="imagenes/Expresionismo.png" alt="Expresionismo"></a>
 	    <a href="index.html"><img class="logueo" src="imagenes/Logueo.png" alt="Ícono de logueo"></a>
@@ -255,7 +259,5 @@
 			<a class="name" href="email.html" target="_blank">Laura C Guillen G</a>
  </section>
 </footer>
-	<script>function myFunction() {var x = document.getElementById("mimenu");if (x.className === " ") {x.className += " menucelular";} else {x.className = " ";}}</script>
-	<script src="lightbox2-2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
