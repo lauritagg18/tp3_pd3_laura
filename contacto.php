@@ -28,68 +28,17 @@
   </div>
 		<a href="index.html"><img class="logo" src="imagenes/Expresionismo.png" alt="Expresionismo"></a>
 	    <a href="index.html"><img class="logueo" src="imagenes/Logueo.png" alt="Ícono de logueo"></a>
-</header>
-	<div class="cajatitulo">
-	 <h1>CONTACTO</h1>
-	 <img class="mySlides" src="imagenes/Portada contacto.png" alt="Maqueta">
-	</div>
-	<section>
-	<article class="articleuno">
-		<img class="formufoto" src="imagenes/Danza2.png" alt="Maqueta">
-	</article>
-	<article class="articledos">
-	<form action="enviar.php" method="post" class="formulario">	
-		<p>
-			<label for="camponombre">NOMBRE</label>
-			<input type="text" name="nombre" required id="camponombre" placeholder= "Nombre"> 
-		</p>
-		<p>
-			<label for="campoapellido">APELLIDO</label>
-			<input type="text" name="apellido" required id="campoapellido" placeholder= "Apellido"> 
-		</p>
-		<p>
-			<label for="campotelefono">TELÉFONO</label>
-			<input type="text" name="telefono" required id="campotelefono" placeholder= "Teléfono"> 
-		</p>
-		<p>
-			<label for="campoemail">EMAIL</label>
-			<input type="email" name="email" required id="campoemail" placeholder= "Email"> 
-		</p>
-		<p><label for="campopersona">PROFESIÓN</label>
-			<select name="profesion">
-		<option value="-1"> Seleccione</option>		
-        <option value="Profesor"> Profesor</option>
-        <option value="Estudiante"> Estudiante</option>
-		<option value="Profesional"> Profesional en arte</option>
-			</select>
-      </p>
-		<p>
-        <label for="campomotivo">MOTIVO</label>
-        <input  type="radio" name="motivo" value="Reserva"> Información
-        <input type="radio" name="motivo" value="Opiniones"> Opiniones
-		<input type="radio" name="motivo" value="Soporte"> Soporte
-			<input type="radio" name="motivo" value="RRHH"> RRHH
-      </p>
-	  <p>
-			<label for="campocalifica">CALIFÍCANOS</label>
-		<input type="range" name="califica" id="campocalifica" min="0" max="5"> 
-		</p>
-		<p>
-			<label for="campocv">ADJUNTA TU CV</label>
-		<input type="file" name="curriculum" id="campocv"> 
-		</p>
-		<p>
-			<label for="campocomentario">MENSAJE
-			<textarea name="comentario" placeholder= "Escribe tu mensaje"></textarea>
-			</label>
-		</p>
-		<p class="aceptar">
-			<input class="aceptar2" type="submit" value="Enviar">
-			<input class="aceptar2" type="reset">
-		</p>
-</form>
-	</article>
-</section>
+<?php
+$destino = "lauritagg185@gmail.com";
+$asunto = $_POST['asunto'];
+$mensaje = $_POST['comentario'];
+$nombre = $_POST['nombre'];
+$email = $_POST['email'];
+mail ($destino, $nombre, $asunto, $email, $mensaje);
+
+print ("<h2>Recibimos tu mensaje. Muchas gracias</h2>");
+
+?>
 <footer>
 	
 	<div class="fot">
@@ -125,6 +74,7 @@
 			<a class="name" href="email.html" target="_blank">Laura C Guillen G</a>
  </section>
 </footer>
-	<script>function myFunction() {var x = document.getElementById("mimenu");if (x.className === " ") {x.className += " menucelular";} else {x.className = " ";}}</script>
+
 </body>
 </html>
+
