@@ -12,8 +12,9 @@ nav a{color: #ffffff;margin-right: 1%;text-decoration: none;}
 nav a:hover, nav span:hover {color:#950101;text-decoration: underline;}
 .logo{width: 3.5%;position: absolute;top: 1%;right: 20%} 
 .buscar{position: absolute;top: 1%;padding: 1%;left: 52%;width: 10%;width: 20%;padding-top: 2.5%;}
-input{color:#ffffff ;background-color:#000000;border-top-color: #000000;border-right-color: #000000;border-left-color: #000000;border-bottom-color: #ffffff}
-.btn{cursor: pointer} 
+input{margin-left:3%;color:#ffffff ;background-color:#000000;border-top-color: #000000;border-right-color: #000000;border-left-color: #000000;border-bottom-color: #ffffff}
+.btn{cursor: pointer}
+select{margin-left:3%}
 .lupa{width: 3%;position: absolute;top: 2%;right: 49%;padding-top: 1.5%;} 
 .logueo{width: 4%;position: absolute;top: 1%;right: 14%;border-radius: 50px} 
 .mySlides{width: 100%;} 
@@ -40,18 +41,17 @@ footer div{width: 20%;}
 .redes img{width: 40%;}
 .redes{margin-left:-7%}
 .name{text-decoration: none;color: #ffffff;}
-form{;padding-left:5%;padding-top:5%;font-family: 'Kanit', sans-serif;}
-.formulario{background-color:#0F0F0F;margin: 1%;}
+form{padding-top: 5%;padding-left:5%;padding-left:5%;font-family: 'Kanit', sans-serif;}
+.formulario{width: 90%;background-color:#0F0F0F;margin: 1%;}
 .formulario textarea{background-color: #0F0F0F; font-family: 'Kanit', sans-serif;}
 .formulario p{margin-bottom: 3%}
 .formulario input{background-color:#0F0F0F;} 
-.formulario label{width: 23%;display: inline-block}
+.formulario label{width: 28%;display: inline-block}
 .formufoto{width:100%;margin-left: 5%;margin-top:2%}
 .aceptar{text-align: center;}
 .aceptar2{border-bottom-color:#000000;margin-left:5%;margin-right:5%;padding: 1%}
 .aceptar2:hover{color:#950101;border-bottom-color:#950101;}
 .cajafilosofia{padding:2%;background-color:#0F0F0F;margin:2%}
-.cajafilosofia p {text-align:justify}
 .imagen100{width:90%;margin:5%}
 .cajag12 {width: 98%;height: 510px;position: relative; overflow: hidden;margin: 1%;}
 .cajag13 {width: 46%;height: 510px;position: relative; overflow: hidden;margin: 1%;}
@@ -65,5 +65,5 @@ form{;padding-left:5%;padding-top:5%;font-family: 'Kanit', sans-serif;}
 .formures {padding:13%}
 .artexp h1{font-size: 210%}
 .artexp h2{font-size: 140%;font-family: 'Kanit', sans-serif;}
-.artexp p{font-size: 110%}
-p{font-family: 'Kanit', sans-serif;}
+p{font-family: 'Kanit', sans-serif;font-size: 110%}
+textarea{color: #ffffff}
