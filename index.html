@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Expresionismo/Home</title>
+	<meta name = "viewport" content = "width = device-width,initial-scale = 1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+	</head>
+<body>
+<header>
+		<nav>
+			<a href="origen.html">Origen</a>
+			<a href="filosofia.html">Filosofia</a>
+			<a href="artistas.html">Artistas</a>
+			<a href="galeria.html">Galería</a>
+			<a href="contacto.html">Contacto</a>
+		</nav>
+	  <div class="btn"> 
+	  <img class="lupa" src="imagenes/lupa.png" alt="lupa"></a>
+	  <form class="buscar" action="resultados_buscar.php" method="post"> 
+	  <input type="search" name="buscar" placeholder="Buscar..." />
+      <input type="submit" value="Enviar">
+	    </form>
+  </div>
+		<a href="index.html"><img class="logo" src="imagenes/Expresionismo.png" alt="Expresionismo"></a>
+	    <a href="registrologueo.html"><img class="logueo" src="imagenes/Logueo.png" alt="Ícono de logueo"></a>
+</header>
+	<div class="cajatitulo">
+	 <h1>EXPRESIONISMO</h1>
+	 <h2>La subjetividad de las emociones</h2>
+	 <img class="mySlides" src="imagenes/Grito.png" alt="Obra1">
+	 <img class="mySlides" src="imagenes/Cristo.png"  alt="Obra2">
+	 <img class="mySlides" src="imagenes/Caballo.png" alt="Obra3">
+	</div>
+ <section>
+  <article class="articleuno">
+	<div class="cajap">
+		<p>El movimiento expresionista comenzó en Alemania, y eventualmente se extendió por todo el continente europeo.</p>
+		<a href="origen.html">Ver más</a>
+		<img src="imagenes/Museo.png" alt="Museo">
+	</div>
+	<div class="cajap">
+		<p>El principal atractivo de estas películas reside en su anormalidad escenográfica con una función dramática.</p>
+		<a href="filosofia.html">Ver más</a>
+		<img src="imagenes/Caligari.png" alt="Película">
+	</div>
+	<div class="cajape">
+		<p>El principal atractivo de estas películas reside en su anormalidad escenográfica con una función dramática.</p>
+		<a href="artistas.html">Ver más</a>
+		<img src="imagenes/danza1.png" alt="Danza filmada">
+	</div>
+ </article>
+ <article class="articledos">
+			<div class="cajag1">
+				<p>Los artistas de este estilo distorsionaban la realidad de sus sujetos para expresar sus emociones, sentimientos e ideas.</p>
+		<a href="galeria.html">Ver más</a>
+				<img src="imagenes/Cuadro niña.png" alt="Pintura">
+			</div>
+			<div class="cajag2">
+				<p>Las composiciones son sencillas y directas, el mensaje es de importancia.</p>
+		<a href="contacto.html">Ver más</a>
+				<img src="imagenes/Caballo2.png" alt="Pintura Caballo">
+			</div>
+		</article>
+	 </section>
+<footer>
+	
+	<div class="fot">
+		<a href="políticadecookies.html">política de cookies</a>
+		<a href="políticadeprivacidad.html">política de privacidad</a>
+		<a href="condicionesdeuso.html">condiciones de uso</a>
+	</div>
+	<div class="fot">
+		<a href="avisolegal.html">aviso legal</a>
+		<a href="contacto.html">contactar</a>
+		<a>2022 © EISMO.COM</a>
+	</div>
+		<div class="fot">
+		<a href="soporte.html">ayuda y soporte técnico</a>
+		<a href="contacto.html">suscríbete a la newsletter</a>
+		<a href="mundo.html">EISMO EN EL MUNDO</a>
+	</div>
+<section class="secredes">
+			<div class="redes">
+				<a href="http://www.instagram.com"><img src="imagenes/insta.png" alt="Instagram"></a>
+			</div>
+			<div class="redes">
+				<a href="http://www.facebook.com"><img src="imagenes/face.png" alt="Facebook"></a>
+			</div>
+			<div class="redes">
+				<a href="http://www.twitter.com"><img src="imagenes/twiiter.png" alt="Twitter"></a>
+			</div>
+			<div class="redes">
+				<a href="http://www.youtube.com"><img src="imagenes/youtube.png" alt="Whatsapp"></a>
+			</div>
+ </section>
+ <section class="name">
+			<a class="name" href="email.html" target="_blank">Laura C Guillen G</a>
+ </section>
+</footer>
+	<!-- Código de JavaScript para Slider -->	
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+	// acá define qué elemento entra en el slider
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
+}
+	
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); // Cambia la imagen cada 2 segundos
+}
+</script>	
+<!-- Fin de Código de JavaScript para Slider -->
+</body>
+</html>
